@@ -1,3 +1,6 @@
-# sveltejs/sites
-
-Monorepo for the [sites](sites) in the Svelte ecosystem, and the [packages](packages) they use.
+```
+cd sites/svelte.dev/
+yarn
+yarn dev
+yarn build
+```
