@@ -1,6 +1,8 @@
-import { dev } from '$app/environment';
+// import { dev } from '$app/environment';
 import { SUPABASE_URL, SUPABASE_KEY } from '$env/static/private';
 import { createClient } from '@supabase/supabase-js';
+
+const dev = true;
 
 export const client =
 	(!dev || (SUPABASE_URL && SUPABASE_KEY)) &&

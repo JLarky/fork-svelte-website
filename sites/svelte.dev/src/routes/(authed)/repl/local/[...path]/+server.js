@@ -1,8 +1,8 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { LOCAL_SVELTE_PATH } from '$env/static/private';
+// import { LOCAL_SVELTE_PATH } from '$env/static/private';
 
-const local_svelte_path = LOCAL_SVELTE_PATH || '../../../svelte';
+const local_svelte_path = '../../../svelte';
 
 export function GET({ params: { path } }) {
 	if (import.meta.env.PROD || ('/' + path).includes('/.')) {
